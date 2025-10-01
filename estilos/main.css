@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+@import url(suport.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+body{
+    font-family: 'Jost';
+    font-weight: 400;
+    box-sizing: border-box;
+    background-color: var(--cor001);
+    overflow-x: hidden;
+    color: var(--cor2);
+    background-color: var(--cor4);
+
+    & h1, h2, h3, h4, h5, h6 {
+        font-family: 'Figtree';
+    }
+
+    & h1 {
+    font-size: 2.3rem;
+    }
+
+    & h2 {
+    font-size: 1.9rem;
+    
+    }
+    & h3 {
+        font-size: 1.5rem;
+    }
+
+    & p {
+        font-size: 1rem;
+        text-align: justify;
+        text-indent: 50px;
+    }
+
+}
+
+header {
+    height: 10vh;
+    background-color: var(--cor3);
+    display: flex; /* Adicionado */
+    align-items: center; /* Alinha ao fundo */
+    justify-content: flex-start; /* Alinha à esquerda */
+    padding: 40px;
+
+    & h1{
+        color: var(--cor1);
+        margin: 0;
+        display: block;
+        font-size: 5rem;
+    }
+}
+
+main {
+    margin: 0 25vw;
+    background-color: var(--cor1);
+    padding: 20px;
+    padding-bottom: 5vh;
+    
+    & p, h1, h2, h3, h4, h5, h6{
+        margin: 0 40px;
+    }
+}
