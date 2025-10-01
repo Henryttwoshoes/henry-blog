@@ -48,18 +48,30 @@ body{
 }
 
 header {
-    height: 10vh;
+    height: 30vh;
+    
     background-color: var(--cor3);
     display: flex; /* Adicionado */
-    align-items: center; /* Alinha ao fundo */
+    flex-direction: column;
+    align-items: flex-start; /* Alinha ao fundo */
     justify-content: flex-start; /* Alinha à esquerda */
-    padding: 40px;
+    padding: 70px;
+    padding-bottom: 40px;
 
     & h1{
         color: var(--cor1);
         margin: 0;
-        display: block;
+        padding-top: 30px;
         font-size: 5rem;
+        line-height: 1;
+    }
+
+    & h2 {
+        color: rgb(214, 214, 214);
+        margin: 0;
+        font-size: 2rem;
+        font-weight: 350;
+        line-height: 1.2;
     }
 }
 
