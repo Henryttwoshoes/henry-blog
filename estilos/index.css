@@ -27,6 +27,11 @@ body{
     }
 }
 
+hr {
+    border-top: 2px solid var(--cor3);
+}
+
+
 header {
     display: grid;
 
@@ -116,25 +121,89 @@ section.intro{
 main {
     margin: auto;
     box-sizing: border-box;
-    height: 50vh;
+    padding-bottom: 50vh;
     background-color: var(--cor1);
     max-width: 90vw;
     padding: 2vw;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+            "coluna2 coluna1";
 }
 
-main > div.post{
+
+.legenda {
+    
+    
+     & .legenda-head {
+        padding: 20px;
+        box-sizing: border-box;
+    
+        background-color: white;
+        margin-left: 10%;
+        padding-bottom: 4vh;
+        box-shadow: 0 4px 5px 0 var(--cor3a);
+        
+        width: 400px;
+        background-color: white;
+        
+        flex: 1 1 0;
+        max-width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-left: 30px;
+        flex-flow: column wrap;
+
+        & h2 {
+            font-size: 2.5rem;
+        }
+        & p {
+            font-size: 1rem;
+            font-weight: 350;
+            text-align: justify;
+            margin: 0 2vw 0 40px;
+            padding: 5px 0;
+        }
+
+        
+
+
+     }
+
+     & hr {
+            width: 90%;
+            align-self: stretch; /* faz o hr ocupar toda a largura no flexbox */
+            margin: 10px 0;      /* espaço acima e abaixo */
+            border: 2px solid var(--cor3);
+        }
+}
+
+
+
+
+
+main > section.posts{
+    grid-area: coluna2;
+}
+
+
+main > section.posts > .post{
     width: 800px;
     height: 300px;
     background-color: white;
     display: flex;
     flex-wrap: nowrap;
+    margin-bottom: 20px;
 
 
     transition: transform 0.3s, box-shadow 0.3s;
 
     
 
-
+    
 
 
     & .texto-post{
@@ -150,6 +219,7 @@ main > div.post{
 
         & h2 {
             font-size: 2.5rem;
+            transition: color 0.3s;
         }
         & p {
             font-size: 1rem;
@@ -189,4 +259,8 @@ main > div.post{
 div.post:hover{
     box-shadow: 0 4px 5px 0 var(--cor3a);
     transform: translateY(-10px);
+
+    }
+& .post:hover .texto-post h2{
+        color: var(--cor3);
     }
