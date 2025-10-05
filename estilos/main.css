@@ -95,22 +95,18 @@ main {
 
 & img {
     margin: 10px;
-
+    transition: transform 0.3s, box-shadow 0.3s;
     max-width: 90%;
     display: block;
-
+    transform: translateX(0px) translateY(0px);
 
     
 }
 
 & img:hover{
     box-shadow: 0 4px 5px 0 var(--cor3a);
-    transition: 0.3s;
-    }
-
-& img::not(:hover){
-    box-shadow: 0 0px 0px 0 rgba(rgba(0, 0, 0, 0), 0);
-    transition: 0.3s;
+    
+    transform: translateY(+5px);
     }
 
 }
