@@ -205,8 +205,16 @@ main > section.posts{
     grid-area: coluna2;
 }
 
+.post > a {
+    text-decoration: none;
+    
+    & h2, p{
 
-main > section.posts > .post{
+    color: black;
+}
+}
+
+main > section.posts > .post > a{
     width: 800px;
     height: 300px;
     background-color: white;
@@ -234,8 +242,9 @@ main > section.posts > .post{
         flex-flow: column wrap;
 
         & h2 {
-            font-size: 2.5rem;
+            font-size: 2.3rem;
             transition: color 0.3s;
+            padding-right: 5px;
         }
         & p {
             font-size: 1rem;
@@ -272,11 +281,11 @@ main > section.posts > .post{
 
 
 }
-div.post:hover{
+div.post > a:hover{
     box-shadow: 0 4px 5px 0 var(--cor3a);
     transform: translateY(-10px);
 
     }
-& .post:hover .texto-post h2{
+& .post > a:hover .texto-post > h2, .post > a:hover .texto-post > p {
         color: var(--cor3);
     }
