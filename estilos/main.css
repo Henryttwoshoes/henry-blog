@@ -39,7 +39,7 @@ body{
     }
 
     & p {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         text-align: left;
         text-indent: 50px;
     }
@@ -47,7 +47,7 @@ body{
 }
 
 header {
-    padding-bottom: 10vh;
+    
     
     background-color: var(--cor3);
     display: flex; /* Adicionado */
@@ -55,6 +55,7 @@ header {
     align-items: flex-start; /* Alinha ao fundo */
     justify-content: flex-start; /* Alinha à esquerda */
     padding: 70px;
+    padding-bottom: 25vh;
 
     & h1{
         color: var(--cor1);
@@ -79,8 +80,14 @@ main {
     padding-bottom: 10vh;
     
     & p, h1, h2, h3, h4, h5, h6{
-        margin: 30px 20vw;
+        margin: 30px 25vw;
     }
+    & hr {
+            width: 50%;
+            margin: 0 auto 60px auto;
+            align-self: stretch; /* faz o hr ocupar toda a largura no flexbox */
+            border: 2px solid var(--cor3);
+        }
 }
 
 .image-container {
@@ -113,9 +120,11 @@ main {
 main > footer {
     margin: auto;
     text-align: center;
-    display: flex;
-    padding-top: 10vh;
+    padding-top: 5vh;
 
+    & div.container-flex{
+        display: flex;
+    }
     
     & a {
         margin: auto;
@@ -126,7 +135,7 @@ main > footer {
     }
     
     & h1 {
-        outline: 1px solid black;
+        outline: 4px solid black;
         margin: auto;
         padding: 15px;   
         display: block;
@@ -140,7 +149,7 @@ main > footer {
     }
 }
 
-main > footer > a > h1:hover{
+main > footer > .container-flex > a > h1:hover{
     box-shadow: 0 4px 5px 0 var(--cor3a);;
     transform: translateY(+10px);
     color: var(--cor3);
@@ -155,4 +164,16 @@ main > footer > a > h1:hover{
         padding-top: 0px;
         max-width: 90%;
     }
+
+    main > p {
+        font-size: 1.4rem;
+        text-align: left;
+        text-indent: 50px;
+    }
+
+    main {
+        & p, h1, h2, h3, h4, h5, h6{
+        margin: 30px 20vw;
+    }
+}
 }
