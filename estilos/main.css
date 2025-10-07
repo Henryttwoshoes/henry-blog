@@ -158,13 +158,19 @@ main > footer > .container-flex > a > h1:hover{
 
 
 @media screen and (max-width: 992px){
-    header h1 {
+    header{
+        
+        padding-bottom: 8vh;
+
+
+        & h1 {
         font-size: 3rem;
         padding-bottom: 20px;
         padding-top: 0px;
         max-width: 90%;
     }
 
+}
     main > p {
         font-size: 1.4rem;
         text-align: left;
