@@ -9,8 +9,74 @@ Desktop: 992px até 1200px
 TV: acima de 1200px
 
 */
-@media screen and (min-width: 768px) and (max-width: 992px) { 
+@media screen and (min-width: 768px) and (max-width: 1248px) { 
+
+    main {
+        display: block;
+    }
 
 
+    .legenda {
     
+    
+     & .legenda-head {
+        padding: 20px;
+        box-sizing: border-box;
+    
+        background-color: white;
+        margin-left: 10%;
+        padding-bottom: 4vh;
+        box-shadow: 0 4px 5px 0 var(--cor3a);
+        
+        width: 90%;
+        background-color: white;
+        
+        flex: 1 1 0;
+        max-width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-left: 30px;
+        flex-flow: column wrap;
+
+        & h2 {
+            font-size: 2.5rem;
+        }
+        & p {
+            font-size: 1rem;
+            font-weight: 350;
+            text-align: justify;
+            margin: 0 2vw 0 40px;
+            padding: 5px 0;
+        }
+
+        
+
+
+     }
+
+     & hr {
+            width: 90%;
+            align-self: stretch; /* faz o hr ocupar toda a largura no flexbox */
+            margin: 10px 0;      /* espaço acima e abaixo */
+            border: 2px solid var(--cor3);
+        }
+
+
+    & .recent-posts {
+        & p {
+            font-size: 1.2rem;
+            font-weight: 450;
+            text-align: left;
+            margin: 0 2vw 0 40px;
+            padding: 5px 0;
+        }
+        & figcaption{
+            padding: 5px 0;
+            margin: 0 2vw 0 70px;
+            font-weight: 280;
+        }
+    }
+}
+
 }
