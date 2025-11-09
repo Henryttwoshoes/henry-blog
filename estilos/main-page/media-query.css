@@ -10,7 +10,7 @@ TV: acima de 1200px
 
 */
 
-@media screen and (min-width: 768px) and (max-width: 1510px) { 
+@media screen and (min-width: 0px) and (max-width: 1510px) { 
 section.intro > img{
 
     display: none !important ;
@@ -18,7 +18,7 @@ section.intro > img{
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1248px) { 
+@media screen and (min-width: 0px) and (max-width: 1270px) { 
 
     main {
         display: block;
@@ -27,7 +27,7 @@ section.intro > img{
 header {
     display: grid;
 
-    grid-template-columns: minmax(auto, .5fr) 0.1fr 1.5fr 0.2fr 0.2fr;
+    grid-template-columns: 1.5fr minmax(auto, .5fr) 0.1fr 1.5fr 0.2fr 0.0000004fr;
     
     background-color: var(--cor3);
     align-items: flex-start; 
@@ -75,7 +75,7 @@ section.intro{
 }
 
     & h1 {
-        font-size: 5rem;
+        font-size: 4rem;
         text-align: center;
     }
 
@@ -163,10 +163,9 @@ section.intro{
 }
 main > section.posts > .post > a{
     width: 98.5%;
-    height: 300px;
+    padding-bottom: 10px;
     background-color: white;
     display: flex;
     flex-wrap: nowrap;
     margin-bottom: 20px;
-}
 }
