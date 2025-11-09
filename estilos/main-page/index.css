@@ -173,7 +173,7 @@ main {
      }
 
      & hr {
-            width: 90%;
+            width: 100%;
             align-self: stretch; /* faz o hr ocupar toda a largura no flexbox */
             margin: 10px 0;      /* espaço acima e abaixo */
             border: 2px solid var(--cor3);

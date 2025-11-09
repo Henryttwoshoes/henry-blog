@@ -9,19 +9,10 @@ Desktop: 992px até 1200px
 TV: acima de 1200px
 
 */
-
 @media screen and (min-width: 768px) and (max-width: 1510px) { 
-section.intro > img{
 
-    display: none !important ;
-}
-
-}
-
-@media screen and (min-width: 768px) and (max-width: 1248px) { 
-
-    main {
-        display: block;
+    .intro > img{
+        display: none !important;
     }
 
 header {
@@ -85,6 +76,9 @@ section.intro{
         text-align: justify;
     }
     
+
+    & img {
+    display: none;
 
 
 }
